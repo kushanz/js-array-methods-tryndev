@@ -6,7 +6,7 @@ const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h3>JS Array methods</h3>`;
 
 // array sample
-var products = [
+const products = [
   { name: 'Iron', price: 530 },
   { name: 'Phone', price: 770 },
   { name: 'Laptop', price: 2300 },
@@ -16,3 +16,16 @@ var products = [
   { name: 'Table', price: 900 },
   { name: 'Shoes', price: 650 }
 ];
+
+// array filter method
+const filteredProduct = products.filter(item => {
+  return item.price < 500;
+});
+
+console.log(filteredProduct);
+
+// map array method
+const productNames = products.map(item => {
+  return item.price;
+});
+console.log(productNames);

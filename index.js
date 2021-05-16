@@ -29,3 +29,21 @@ const productNames = products.map(item => {
   return item.price;
 });
 console.log(productNames);
+
+// find array method
+const findProduct = products.find(item => {
+  return item.name === 'Laptop';
+});
+
+console.log(findProduct);
+
+products.forEach(item => {
+  console.log(item.name);
+});
+
+// some method
+const isInexpensiveItems = products.some(item => {
+  return item.price < 1000;
+});
+
+console.log(isInexpensiveItems);
